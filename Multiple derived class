@@ -1,0 +1,33 @@
+
+#include <iostream>
+#include<string>
+using namespace std;
+class Vehicle{
+    public:
+    string compnay="FORD";
+    void type()
+    {
+        cout<<"Mustang"<<endl;
+    }
+};
+class specs{
+    public:
+    string mileage="8 kmpl";
+    void color()
+    {
+        cout<<"Grey"<<endl;
+        
+    }
+};
+class car:public Vehicle:public specs{
+    public:
+    string seater="4 seater";
+};
+int main() {
+   car f2;
+   f2.color();
+   cout<<f2.company<<" ";
+   f2.type();
+   cout<<"("<<f2.seater<<")"<<endl<<"mileage:"<<f2.mileage<<endl;
+    return 0;
+}
