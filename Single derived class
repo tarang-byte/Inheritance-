@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Vehicle
+{
+    public:
+    string brand="Ford";
+    void color()
+    {
+        cout<<"red";
+
+    }
+};
+class car:public Vehicle
+{
+    public:
+    string model=" Mustang";
+};
+int main()
+{
+   car c;
+   c.color();
+   cout<<c.brand+" "+c.model;
+   return 0;
+    
+}
